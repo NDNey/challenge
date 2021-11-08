@@ -6,16 +6,7 @@ where the sequence is:
 
 
 function fibonacci(n) {
-    let answer = [0,1]
-    if(n > 0){
-      for(let i = 1; i < n -1; i++ ){
-      answer.push(answer[i] + answer[i-1] )
-    }
-      return answer
-    }else{
-      answer = []
-      return  answer
-    } 
+ 
 }
 
 module.exports = fibonacci

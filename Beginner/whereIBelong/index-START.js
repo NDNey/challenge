@@ -9,17 +9,13 @@ than 1(index 0), but less than 2(index 1).
 
 
 function whereIBelong(arr, num) {
-   // checks numbers instead of strings
-   arr.sort((a, b) => {
-       return a - b
-   })
-  // checks if arr # is more than provided num
+   arr.sort((a, b) =>  a - b)
    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] >= num) { // if it is, then sends that index pos
+        if (arr[i] >= num) { 
            return i
         }
    }
-   return arr.length
+   return 0
 }
 
 

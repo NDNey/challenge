@@ -5,8 +5,7 @@
 */
 
 function chunkArray(array, size) {
-let mix = array.concat(size)
-return [...new Set(mix)]
+
 }
 
 
