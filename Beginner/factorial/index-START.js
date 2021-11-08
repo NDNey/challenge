@@ -4,16 +4,16 @@ the provided integer(n). E.g
     factorial(5) // should return 120
 */
 
-
-function factorial(n, memo) {
-    memo = memo || {}
-    if(memo[n]){
-        return memo[n]
-    }  
-    if (n === 0) {
+function factorial(num) {
+    if (num === 0 || num === 1){
         return 1
     }
-    return memo[n] = n * factorial(n - 1, memo)
+    
+    for(let i = num - 1; i >= 1; i--){
+        num *= i
+    }
+    return num
 }
 
 module.exports = factorial
+

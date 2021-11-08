@@ -8,10 +8,10 @@ don't. E.g
 
 
 function isAnagram(stringA, stringB) {
-    stringA = stringA.toLowerCase()
-    stringB = stringB.toLowerCase()
+    a = stringA.toLowerCase().split('').sort() 
+    b = stringB.toLowerCase().split('').sort() 
 
-  return  stringA.split('').sort() == stringB.split('').sort()
+  return  a == b ? true : false
 }
 
 
